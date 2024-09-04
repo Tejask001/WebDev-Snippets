@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* .main {
+            width: 450px;
+            height: 550px;
+        } */
+    </style>
+
+</head>
+
+<!-- Change code below this line -->
+
+<body class="bg-[#181028] flex justify-center items-center min-h-screen">
+    <div class="main h-3/5 lg:h-4/5 bg-slate-50 rounded-lg flex flex-col justify-center shadow-sm">
+        <div class="flex flex-col justify-center items-center">
+            <h1 class="font-sans text-2xl font-bold w-2/5 text-center">Join the community</h1>
+            <p class="text-center text-xs w-2/4 my-3">Take your art to the next level. Get it seen by millions of people
+            </p>
+        </div>
+        <div class="flex flex-col justify-center items-center h-20">
+            <button
+                class="bg-blue-900/80 hover:bg-blue-900 text-gray-50 h-10 w-7/12 p-2 text-xs font-semibold rounded">Join
+                with Facebook</button>
+            <span class="text-gray-500 text-xs my-2 ">Or</span>
+        </div>
+        <div class="flex justify-center align-middle h-60">
+            <div class="w-7/12 flex flex-col">
+                <div class="flex flex-row mb-2">
+                    <input class="min-h-10 max-h-10 w-2/4 border rounded pl-4 mr-2 text-xs"
+                        placeholder="First name"></input>
+                    <input class="min-h-10 max-h-10 w-2/4 border rounded pl-4 text-xs" placeholder="Last Name"></input>
+                </div>
+                <input class="min-h-10 max-h-10 border rounded pl-4 text-xs mb-2" placeholder="Email"></input>
+                <input class="min-h-10 max-h-10 border rounded pl-4 text-xs mb-2" type="password"
+                    placeholder="Password"></input>
+                <div class="flex flex-col justify-center items-center">
+                    <button
+                        class="bg-gray-800/90 hover:bg-gray-900 text-gray-50 h-10 w-full p-2 text-xs font-semibold rounded mt-2 mb-4">Create
+                        New
+                        Account</button>
+                    <span class="text-gray-500 text-xs text-center text-opacity-90 w-10/12 pt-4">By Joining you, agree
+                        to our Terms of
+                        Service and Privacy Policy</span>
+                </div>
+            </div>
+        </div>
+        <!-- Code injected by live-server -->
+        <script>
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+                (function () {
+                    function refreshCSS() {
+                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                        var head = document.getElementsByTagName("head")[0];
+                        for (var i = 0; i < sheets.length; ++i) {
+                            var elem = sheets[i];
+                            var parent = elem.parentElement || head;
+                            parent.removeChild(elem);
+                            var rel = elem.rel;
+                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                            }
+                            parent.appendChild(elem);
+                        }
+                    }
+                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                    var socket = new WebSocket(address);
+                    socket.onmessage = function (msg) {
+                        if (msg.data == 'reload') window.location.reload();
+                        else if (msg.data == 'refreshcss') refreshCSS();
+                    };
+                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                        console.log('Live reload enabled.');
+                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                    }
+                })();
+            }
+            else {
+                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+        </script>
+</body>
+<!-- Change code above this line -->
+
+</html>

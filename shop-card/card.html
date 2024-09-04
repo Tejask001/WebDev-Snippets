@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .main {
+            width: 600px;
+            height: 300px;
+        }
+
+        @media only screen and (max-width: 640px) {
+            .main {
+                width: 300px;
+                height: 480px;
+            }
+
+            .image>img {
+                width: 60% !important;
+            }
+        }
+
+        span.text-xs {
+            font-size: 8px;
+        }
+
+        #btn>button {
+            box-shadow: green 0px 4px;
+        }
+    </style>
+
+</head>
+
+<!-- Change code below this line -->
+
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div class="main flex flex-col sm:flex-row bg-slate-50 shadow-lg rounded-md">
+        <div id="image" class="flex items-center justify-center sm:w-2/5">
+            <img class="w-3/5 sm:w-full ml-4"
+                src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-select-spacegray-202011?wid=940&hei=1112&fmt=png-alpha&.v=1604709508000">
+        </div>
+        <div id="details" class="flex flex-col ml-4 mt-2">
+            <div class="shipping">
+                <span class="bg-gray-900 rounded-sm w-5 px-1 py-1 text-xs text-gray-100">Free Shipping</span>
+            </div>
+
+            <div>
+                <h1 class="mt-3 text-2xl font-semibold">Airpods Max Space Gray</h1>
+            </div>
+
+            <div id="price" class="flex flex-col">
+                <span><s class="text-sm">59,900</s></span>
+                <span class="text-2xl font-semibold">55,900</span>
+                <span class="text-xs text-gray-600 w-3/4">This offer is valid until Apr 3 as long as the stock
+                    lasts</span>
+            </div>
+            <div id="btn">
+                <button
+                    class="mt-2 bg-gray-900 hover:bg-green-700 text-gray-50 rounded-md hover:shadow-gray-900 w-10/12 h-10 text-sm">Add
+                    to cart</button>
+            </div>
+            <div id="stock" class="mt-3 ml-3 flex flex-row items-center">
+                <div class="bg-green-500 w-2 h-2 rounded-full mr-2"></div>
+                <span class="text-xs font-bold">50+ pieces in stock</span>
+            </div>
+            <div id="cart-wishlist flex flex-row w-3/4">
+                <button class="border rounded-sm border-gray-400 py-1 px-2" style="font-size:10px"><i
+                        class="bi bi-cart"></i> Add to cart</button>
+                <button class="border rounded-sm border-gray-400 py-1 px-2" style="font-size:10px"><i
+                        class="bi bi-suit-heart"></i> Add to wishlist</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Change code above this line -->
+
+</html>
